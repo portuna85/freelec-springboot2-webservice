@@ -2,4 +2,6 @@
 /.gradle/
 .gradle
 .idea
-src/test
+
+
+application-oauth.properties
