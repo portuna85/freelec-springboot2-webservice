@@ -2,7 +2,6 @@ language: java
 jdk:
   - openjdk11
 
-
 branches:
   only:
     - master
@@ -13,11 +12,11 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
-script:
-  "./gradlew clean build"
+script: "./gradlew clean build"
 
-# CI 실행완료시 메일로 알람
+# CI 실행 완료시 메일로 알림
 notifications:
   email:
     recipients:
-      - portuna85@gmail.com
+      - denhenker@naver.com
+
