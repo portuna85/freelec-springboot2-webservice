@@ -8,15 +8,14 @@ branches:
     - master
 
 # Travis CI 서버의 HOME
-before_install:
-  - sudo chmod +x ./gradlew
-
 cache:
   directories:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
-script: "./gradlew clean build"
+script:
+  "sudo chmod +x ./gradlew"
+  "./gradlew clean build"
 
 before_deploy:
   - zip -r freelec-springboot2-webservice*
