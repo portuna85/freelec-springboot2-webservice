@@ -9,7 +9,7 @@ branches:
 
 # Travis CI 서버의 HOME
 before_install:
-  - chomod +x ./gradlew
+  - sudo chmod +x ./gradlew
 
 cache:
   directories:
